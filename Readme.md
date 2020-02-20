@@ -1,51 +1,26 @@
-# TypeScript-Jest-Node Starter
+# Sleeping
 
-[![Build Status](https://travis-ci.org/al-chaudhari/yarn-ts-jest-starter.svg?branch=master)](https://travis-ci.org/al-chaudhari/yarn-ts-jest-starter)
+There Are Two Kind of Sleep Here
 
-[![Coverage Status](https://coveralls.io/repos/github/al-chaudhari/yarn-ts-jest-starter/badge.svg?branch=master)](https://coveralls.io/github/al-chaudhari/yarn-ts-jest-starter?branch=master)
+1. Promise Based
+2. Old Fashion Way
 
-**Dependencies**
-```
-yarn install
-```
+Both Sleep is `Non Blocking`
 
-**Test**
+```javascript
+// Promise Way
 
-```
-yarn run test // Runtest
-```
-**Build And Start**
-```
-yarn run start // Build And Start
-```
-**Start Dev Server**
-```
-yarn run start:dev // Start Development Server with Nodemon
+async () => {
+    await sleep(2000); // 2000ms
+};
 ```
 
-**Build**
-```
-yarn run build // Rebuild
-```
+Second Way is Old Fashion Settimeout Way
 
-**Lint**
-
-```
-yarn run lint
+```javascript
+() => {
+    oldSleep(3000, () => console.log('Hey'));
+};
 ```
 
-**format**
-```
-yarn run format
-```
-
-**doc**
-
-```
-yarn run doc
-
-```
-
-# Coverage Features
-
-It comes with Coveralls & TravisCI Configurations. Just Enable Travis Ci and Coveralls  `change your Badge`.
+**Available For Both JavaScript & TypeScript**
