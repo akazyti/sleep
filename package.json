@@ -1,14 +1,17 @@
 {
-  "name": "yarn-ts-starter",
+  "name": "sleepingdog",
   "version": "1.0.0",
-  "description": "Start For Me",
+  "description": "Async Sleep Utility",
   "main": "build/index.js",
   "keywords": [
-    "Terminal"
+    "Sleep",
+    "JavaScript",
+    "TypeScript",
+    "JavaScript-Sleep"
   ],
   "types": "build/index.d.ts",
   "author": "Akash Chaudhari",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
@@ -61,5 +64,8 @@
     "LICENSE",
     "Readme.md",
     "build/"
-  ]
+  ],
+  "repository": "https://github.com/al-chaudhari/sleep",
+  "homepage": "https://github.com/al-chaudhari/sleep",
+  "bugs": "https://github.com/al-chaudhari/sleep/issues"
 }
