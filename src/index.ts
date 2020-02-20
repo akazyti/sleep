@@ -1,9 +1,18 @@
 /**
- * Used to Calculate Addition
- * @param  a First Number
- * @param  b Second Number
- * @return   Addition of Both
+ * Sleep Utility Based On Promise
+ * @param  ms
+ * @return    Promise
  */
-export function add(a: number, b: number): number {
-    return a + b;
+export function sleep(ms: number) {
+    return new Promise(res => setTimeout(res, ms));
+}
+
+/**
+ * Old Way of Sleeping
+ * @param  ms      MicroSecond
+ * @param  handler Function handler
+ * @return
+ */
+export function oldSleep(ms: number, handler: Function) {
+    setTimeout(handler, ms);
 }
